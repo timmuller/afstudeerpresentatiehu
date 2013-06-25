@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Byte Internet Afstuderen</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/hu.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="intro" class="step slide" data-x="-1000" data-y="-1500" style="text-align:center" data-scale="4">
+
+        <div class="center" style="text-align:center;">
+          <h1 class="center"><i>"Herstructureren en Moderniseren<br/>van het Service Panel"</i></h1>
+        </div>
+        <div style="height:10px"></div>
+
+        <img class="shadow" src="images/SP_home.png" style="position:relative; bottom:-10px" />
+        <img src="images/logo-byte_internet.png" style="position:absolute; left:50px; bottom:50px"/>
+        
+    </div>
+
+
+    <div id="agenda" class="step slide" data-x="2800" data-y="-1500" data-rotate-y="20" data-scale="4">
+
+       <div class="center" style="text-align:center;">
+         <h1>Agenda</h1>
+       </div>
+
+       <ul>
+         <li>Byte Internet</li>
+         <li>Probleemstelling</li>
+         <li>Doelstellingen</li>
+         <li>Onderzoek</li>
+         <li>Opzet Service Panel</li>
+         <li>SSH Key Manager</li>
+         <li>Authenticatie</li>
+         <li>Resultaat</li>
+         <li>Slot</li>
+       </ul>
+    </div>
+
+    <div id="byte" class="step slide" data-x="6600" data-y="-1500" data-rotate-y="30" data-scale="5">
+       <div class="center" style="text-align:center;">
+         <h1>Byte Internet</h1>
+       </div>
+   
+       <div style="position:absolute; bottom:20px; right:20px;">
+         <img src="images/byte_kantoor.jpg" class="pull-right shadow" width="450" />
+         <div class="image_subtitle">Voorkant Kantoor Byte Internet</div>
+       </div>
+
+       <ul>
+           <li>Opgericht 1999</li>
+           <li>Hosting</li>
+           <ul>
+             <li>Cluster Hosting</li>
+             <li>Magento</li>
+           </ul>
+           <li>Contact met klanten</li>
+           <ul>
+             <li>Service Panel</li>
+           </ul>
+       </ul>
+ 
+    </div>
+
+    <div id="probleemstelling" class="step slide" data-x="-1000" data-y="1500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Probleemstelling</h1>
+       </div>
+       
+       <img src="images/500.png" style="position:absolute; bottom:20px; right:20px;"/>
+
+       <ul>
+           <li>Inconsistente opbouw</li>
+           <ul>
+             <li>Onderhoudbaarheid</li>
+           </ul>
+           <li>Verouderde Software</li>
+           <ul>
+             <li>Schaalbaarheid</li>
+           </ul>
+           <li>Sessie informatie aan clientside</li>
+       </ul>
+
+    </div>
+
+    <div id="doelstelling" class="step slide" data-x="-1000" data-y="4500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Doelstelling</h1>
+       </div>
+
+       <ul>
+         <li>Model-View-Controller Framework</li>
+         <li>Consistente Opbouw</li>
+         <li>Nieuwe Technieken</li>
+         <li>Sessies serverside</li>
+         <li>Gedocumenteerd & Getest</li>
+       </ul>
+    
+    </div>
+
+
+    <div id="onderzoek" class="step slide" data-x="-1000" data-y="7500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Onderzoek</h1>
+       </div>
+
+       <ul>
+         <li>Oriënteren</li>
+         <li>Requirements</li>
+         <li>Vergelijkingstabel</li>
+         <li>Proof of Concept</li>
+         <li>Multi Criteria Analysis</li>
+       </ul>
+    </div>
+
+    <div id="onderzoek_orienteren" class="step" data-x="3000" data-y="7500" data-scale="4">
+        <div style="text-align:center">
+          <h1>Oriënteren</h1>
+          <li data-jmpress="fade">Some extra point</li>
+        </div>
+    </div>
+
+    <div id="opzet_servicepanel" class="step slide" data-x="-1000" data-y="10500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Opzet Service Panel</h1>
+       </div>
+
+       <ul>
+           <li>Eerst de SSH Key Manager</li>
+           <li>Integreren tot één Applicatie</li>
+           <li>Uitwisselen sessie informatie</li>
+       </ul>
+
+    </div>
+
+
+    <div id="ssh_key_manager" class="step slide" data-x="-1000" data-y="13500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>SSH Key Manager</h1>
+       </div>
+
+       <ul>
+         <li>De eerste tool</li>
+         <li>Verzoek van klanten</li>
+         <li>Agile, SCRUM</li>
+         <li>Test-Driven-Development</li>
+       </ul>
+    </div>
+
+    <div id="ssh_key_manager_tech" class="step slide" data-x="-1000" data-y="16500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>SSH Key Manager</h1>
+       </div>
+
+
+       <ul>
+         <li>Celery</li>
+         <li>Remote Procedure Calls</li>
+         <li>Ontkoppelen van database</li>
+       </ul>
+    </div>
+
+    <div id="authenticatie" class="step slide" data-x="-1000" data-y="19500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Authenticatie</h1>
+       </div>
+
+       <ul>
+         <li>Inlogpagina naar Python</li>
+         <li>Sessies serverside</li>
+         <li>Sessie delen met perl Service Panel</li>
+         <ul>
+           <li>OAuth2 Provider Python</li>
+         </ul>
+       </ul>
+    </div>
+
+    <div id="resultaat" class="step slide" data-x="-1000" data-y="22500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Resultaat</h1>
+       </div>
+
+       <ul>
+         <li>Service Panel</li>
+         <ul>
+           <li>Consistente opbouw</li>
+           <li>Meer controle over kwaliteit</li>
+         </ul>
+       </ul>
+    </div>
+
+    <div id="slot" class="step slide" data-x="-1000" data-y="25500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Slot</h1>
+       </div>
+    </div>
+    <div id="vragen" class="step slide" data-x="-1000" data-y="28500" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Vragen?</h1>
+       </div>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="3000" data-scale="15">
+    </div>
+
+</div>
+
+<script src="js/jquery-1.10.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
