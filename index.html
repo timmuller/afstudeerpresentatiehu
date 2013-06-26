@@ -344,6 +344,10 @@
 
     <div id="overview" class="step" data-x="3000" data-y="3000" data-scale="15">
     </div>
+    <div id="overview1" class="step" data-x="3000" data-y="9000" data-scale="15">
+    </div>
+    <div id="overview2" class="step" data-x="3000" data-y="15000" data-scale="15">
+    </div>
 
 </div>
 
@@ -370,6 +374,9 @@
                     if (currentSlide === 'authentication_process_closeup') {
                         authentication_closeup();
                     }
+                    if (currentSlide === 'overview1'){
+                      $("#overview").addClass('active')
+                    }
                 });
             });
 
@@ -387,12 +394,12 @@ function slideonderzoek1(){
         $("#webware").addClass("notchosen");
         $("#pyjamas").addClass("notchosen");
         $("#bottle").addClass("notchosen");
-        $("#turbogears").addClass("notchosen");
+        $("#grok").addClass("notchosen");
 }
 function slideonderzoek2(){
 	$("#onderzoek_orienteren").addClass("active");
-        $(".notchosen").addClass("tobackground");
-        $("#grok").addClass("notchosen");
+        $(".notchosen").addClass("tobackground", 1000);
+        $("#turbogears").addClass("notchosen");
         $("#cherrypy").addClass("notchosen");
         $("#web2py").addClass("notchosen");
         $("#onderzoek_orienteren .title").text("Proof of Concept");
