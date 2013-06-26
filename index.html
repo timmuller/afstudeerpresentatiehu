@@ -97,7 +97,7 @@
            <ul>
              <li>Onderhoudbaarheid</li>
            </ul>
-           <li>Verouderde Software</li>
+           <li>Verouderde software</li>
            <ul>
              <li>Schaalbaarheid</li>
            </ul>
@@ -218,7 +218,7 @@
 
     <div id="onderzoek_conclusion" class="slide step" data-x="11000" data-y="6300" data-z="-3000" data-scale="1" data-rotate-y="90" data-rotate-x="90">
         <div style="text-align:center">
-          <h1>Conclusion</h1>
+          <h1>Conclusie</h1>
         </div>
 
         <ul>
@@ -226,6 +226,7 @@
           <ul>
             <li>Toevoegen tools</li>
             <li>Ondersteuning requirements</li>
+            <li>Test framework</li>
             <li>Aanwezige kennis</li>
           </ul>
         </ul>
@@ -283,13 +284,6 @@
        <div style="text-align:center">
          <img src="images/sshinfrastructure.png" class="shadow" />
        </div>
-<!--
-       <ul>
-         <li>Celery</li>
-         <li>Remote Procedure Calls</li>
-         <li>Ontkoppelen van database</li>
-       </ul>
--->
     </div>
 
     <div id="authenticatie" class="step slide" data-x="-1000" data-y="13500" data-scale="4">
@@ -307,6 +301,25 @@
        </ul>
     </div>
 
+    <div id="authentication_process" class="step slide" data-x="2800" data-y="13500" data-rotate-y="20" data-scale="4">
+       <div class="center" style="text-align:center;">
+         <h1>Authenticatie</h1>
+       </div>
+       <ul>
+         <li>OAuth access token</li>
+         <ul>
+           <li>Perl toegang tot Python</li>
+         </ul>
+       </ul>
+
+       <img src="images/authenticate_default.png" class="shadow" style="position:absolute;bottom:20px;right:20px;" />
+    </div>
+
+    <div id="authentication_process_closeup" class="step hide" data-x="3600" data-y="14000" data-rotate-y="20" data-scale="2">
+     
+    </div>
+
+
     <div id="resultaat" class="step slide" data-x="-1000" data-y="16500" data-scale="4">
        <div class="center" style="text-align:center;">
          <h1>Resultaat</h1>
@@ -316,17 +329,14 @@
          <li>Service Panel</li>
          <ul>
            <li>Consistente opbouw</li>
+           <li>Beter te onderhouden</li>
+           <li>Klant merkt geen verschil</li>
            <li>Meer controle over kwaliteit</li>
          </ul>
        </ul>
     </div>
 
-    <div id="slot" class="step slide" data-x="-1000" data-y="19500" data-scale="4">
-       <div class="center" style="text-align:center;">
-         <h1>Slot</h1>
-       </div>
-    </div>
-    <div id="vragen" class="step slide" data-x="-1000" data-y="22500" data-scale="4">
+    <div id="vragen" class="step slide" data-x="-1000" data-y="19500" data-scale="4">
        <div class="center" style="text-align:center;">
          <h1>Vragen?</h1>
        </div>
@@ -357,6 +367,9 @@
                     if (currentSlide === 'onderzoek_orienteren_2') {
                         slideonderzoek2();
                     }
+                    if (currentSlide === 'authentication_process_closeup') {
+                        authentication_closeup();
+                    }
                 });
             });
 
@@ -383,6 +396,10 @@ function slideonderzoek2(){
         $("#cherrypy").addClass("notchosen");
         $("#web2py").addClass("notchosen");
         $("#onderzoek_orienteren .title").text("Proof of Concept");
+}
+function authentication_closeup(){
+	$("#authentication_process").addClass("active");
+
 }
 
 </script>
